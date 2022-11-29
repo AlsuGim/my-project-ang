@@ -1,0 +1,31 @@
+<app-search></app-search>
+<div class="product-wrap">
+    <ul>
+        <li *ngFor=" let vin of vinil">
+            <div class="product-item">
+                <img src="{{vin.imgUrl}}" alt="" class="img_item">
+                <div class="product-buttons">
+                    <a href="" class="button">В корзину</a>
+                </div>
+            </div>
+            <div class="product-title">
+                <a href="">{{vin.name}}</a>
+                <span class="product-price">₽
+                    {{vin.price}}
+                </span> <span class="favorite {{vin.favorite?'':'not'}}">
+                    ❤
+                </span>
+            </div>
+            <div class="product-item-footer">
+                <div class="origins">
+                    <span *ngFor="let origin of vin.origins">
+                        {{origin}}
+                    </span>
+                </div>
+                <div class="cook-time">
+                    {{vin.performer}}
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

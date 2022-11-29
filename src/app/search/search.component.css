@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+.menu{
+   width: 17vw;
+   height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.855);
+    overflow-x: hidden;
+    padding-top: 50px;
+   
+}
+.menu_title{
+   color: #a6670a;
+   
+}
+.menu_text{
+   margin: 0 0.5vw;
+   padding-left: 15px;
+   
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.d7:after {content:""; clear:both; display:table}
+.d7 form {
+  width: auto;
+  /* margin-right: 0px; */
+}
+.d7 input {
+  width: 11vw;
+  height: 5vh;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #F9F0DA;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+.d7 input:focus {
+  width: 11.25vw;
+}
+.d7 button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  /*position: absolute;*/
+  top: -2px;
+  right: 0;
+}
+.d7 button:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #ed9d25;
+}
+.custom-select {
+   position: relative;
+   font-family: Arial;
+ }
+ 
+ .custom-select select {
+   /* display: none;  */
+   background-color: #F9F0DA; 
+   margin-top: 2vh;
+   width: 13vw;
+   height: 4vh;
+   font-size: 14px;
+   color: #272626;
+   width: 11vw;
+  height: 5vh;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+}
+ 
+ .select-selected {
+   background-color: DodgerBlue;
+ }
+ 
+ /* Style the arrow inside the select element: */
+ .select-selected:after {
+   position: absolute;
+   content: "";
+   top: 14px;
+   right: 10px;
+   width: 0;
+   height: 0;
+   border: 6px solid transparent;
+   border-color: #fff transparent transparent transparent;
+ }
+ 
+ /* Point the arrow upwards when the select box is open (active): */
+ .select-selected.select-arrow-active:after {
+   border-color: transparent transparent #fff transparent;
+   top: 7px;
+ }
+ 
+ /* style the items (options), including the selected item: */
+ .select-items div,.select-selected {
+   color: #ffffff;
+   padding: 8px 16px;
+   border: 1px solid transparent;
+   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+   cursor: pointer;
+ }
+ 
+ /* Style items (options): */
+ .select-items {
+   position: absolute;
+   background-color: rgb(255, 173, 30);
+   top: 100%;
+   left: 0;
+   right: 0;
+   z-index: 99;
+ }
+ 
+ /* Hide the items when the select box is closed: */
+ .select-hide {
+   display: none;
+ }
+ 
+ .select-items div:hover, .same-as-selected {
+   background-color: rgba(0, 0, 0, 0.1);
+ }
